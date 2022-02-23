@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(32, 32, 32) !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700 !important;
+}
+
+th {
+  color: #cbcbcb;
+}
+
+td {
+  color: white;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-control {
+  width: 8% !important;
+}
+
+.carousel-bg {
+  background: #151515;
+  width: 100%;
+  height: 32vh;
+  object-fit: fill;
+  object-position: top;
+  position: relative;
+}
+
+.purple-bg {
+  background: rgb(121, 16, 170) !important;
+}
+
+.blue-bg {
+  background: rgb(13, 16, 153) !important;
+}
+
+header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.title {
+  color: white;
+}
+
+.add-btn {
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.add-btn span {
+  font-size: 2.5rem;
+  margin-right: 0.215em;
+}
+
+.modal-content {
+  background-color: rgb(68, 68, 68) !important;
+  color: white;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.close,
+.close:focus,
+.close:hover {
+  color: white !important;
+}
+
+.form-control {
+  color: #151515 !important;
+}
+
+.card {
+  background: #151515;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3fr 2fr;
+  margin-bottom: 2rem;
+}
+
+.fighter-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  max-height: 350px;
+  background: #151515;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+
+.fighter-title {
+  background-color: #2e2f34;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 13px 13px 25px 17px;
+  font-weight: 700 !important;
+  grid-column: 2 / 5;
+}
+
+.nickname {
+  color: #ffc000;
+}
+
+.hometown-record {
+  display: flex;
+  flex-direction: column;
+
+  grid-column: 2 / 5;
+}
+
+.hometown {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flag-icon {
+  margin-left: 10px;
+}
+
+.country span {
+  font-weight: 400;
+}
+
+.record {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3.5rem;
+  gap: 5rem;
+}
+
+.winloses {
+  width: 106px;
+  border: 1px solid #13a400;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.winloses.lose {
+  border: 1px solid #c3031c;
+}
+
+.winloses span:first-child {
+  background-color: #13a400;
+}
+.winloses.lose span:first-child {
+  background-color: #c3031c;
+}
+.winloses span:nth-child(2) {
+  font-size: 25px;
+}
+.winloses span {
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 1px 1px;
+  display: block;
+  text-transform: uppercase;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 22px;
+}
+
+.fighter-data {
+  width: 100%;
+  margin: 0;
+  padding: 13px 13px 25px 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-bg {
+    height: 22vh;
+  }
+  .card {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .fighter-title {
+    order: 0;
+    flex-flow: column wrap;
+  }
+  .hometown {
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .record {
+    justify-content: center;
+  }
+  .fighter-img {
+    order: 1;
+    object-fit: contain;
+  }
+  .fighter-data {
+    order: 2;
+  }
+}
